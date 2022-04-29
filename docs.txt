@@ -1,0 +1,51 @@
+add eslint and prettier
+
+remove the following from package.json
+"eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+
+run yarn add eslint -D
+run npx eslint --init
+run yarn add prettier -D
+add the rules to eslint and prettier config files
+add the following scripts to package.json
+
+"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+
+run yarn add -D eslint-import-resolver-typescript
+add the following to eslint config
+"settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+
+
+
+"rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-var-requires": "off",
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "react/display-name": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },

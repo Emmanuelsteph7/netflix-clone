@@ -6,7 +6,7 @@ import {
   Title,
   Box,
   Image,
-  ImageDiv,
+  ImageDiv
 } from "./jumbotron.styles";
 import { ImageProps, InnerProps } from "./jumbotron.types";
 
