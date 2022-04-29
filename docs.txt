@@ -26,26 +26,5 @@ add the following to eslint config
   }
 
 
-
-"rules": {
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "@typescript-eslint/no-var-requires": "off",
-    "react/prop-types": "off",
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"],
-    "react/display-name": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
-  },
+add husky and lint-staged
+run yarn add husky lint-staged
