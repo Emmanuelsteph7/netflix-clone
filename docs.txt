@@ -27,4 +27,4 @@ add the following to eslint config
 
 
 add husky and lint-staged
-run yarn add husky lint-staged
+run npx mrm@2 lint-staged

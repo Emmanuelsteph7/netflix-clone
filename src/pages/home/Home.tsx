@@ -1,13 +1,10 @@
 import React from "react";
-import { jumboData } from "data/jumboData";
-import JumboSection from "./components/JumboSection";
+import { Footer, Jumbotron } from "containers";
 
 const Home = () => (
   <>
-    {jumboData.map((item) => (
-      <JumboSection key={item.id} item={item} />
-    ))}
+    <Jumbotron />
+    <Footer />
   </>
 );
-
 export default Home;
