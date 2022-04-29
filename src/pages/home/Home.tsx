@@ -3,7 +3,7 @@ import { jumboData } from "data/jumboData";
 import JumboSection from "./components/JumboSection";
 
 const Home = () => {
-  const varia = "";
+  const varia = "dd";
   return (
     <>
       {jumboData.map((item) => (
