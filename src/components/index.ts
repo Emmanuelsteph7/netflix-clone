@@ -1,3 +1,9 @@
 export { default as Jumbotron } from "./jumbotron";
 export { default as Text } from "./text";
 export { default as Footer } from "./footer";
+export { default as Accordion } from "./accordion";
+export { default as EmailForm } from "./emailForm";
+export { default as Hero } from "./hero";
+export { default as Divider } from "./divider";
+export { default as Button } from "./button";
+export { default as Header } from "./header";

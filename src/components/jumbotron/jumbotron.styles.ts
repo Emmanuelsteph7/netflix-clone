@@ -31,7 +31,7 @@ export const Box = styled.div`
 `;
 
 export const Title = styled(H2)`
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   margin-bottom: 15px;
 
   @media screen and (max-width: 991px) {
@@ -40,7 +40,7 @@ export const Title = styled(H2)`
 `;
 
 export const SubTitle = styled(H4)`
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   font-weight: normal;
 
   @media screen and (max-width: 991px) {
