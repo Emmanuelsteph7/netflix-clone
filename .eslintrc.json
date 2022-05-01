@@ -28,7 +28,7 @@
       }
     ],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": [2, "windows"],
     "react/function-component-definition": [
       2,
       {
